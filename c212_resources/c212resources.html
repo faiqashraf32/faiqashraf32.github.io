@@ -15,6 +15,27 @@
 <br />
 <p> If you think there is something that should be posted here, please email me <a href="mailto:faashraf@iu.edu"> here </a> </p>
 
+<script>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter the Password',' ');
+while (testV < 3) {
+if (!pass1)
+history.go(-1);
+if (pass1.toLowerCase() == "donteven12#") {
+alert('You Got it Right!');
+window.open('dl.html');
+break;
+}
+testV+=1;
+var pass1 =
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3)
+history.go(-1);
+return " ";
+}
+</script>
 
 </body>
 </html>
