@@ -1,0 +1,254 @@
+---
+7.6
+---
+a)
+public class HelloWorld{
+
+     public static void main(String []args){
+        int[] a = {1,2,3,4,5,4,3,2,1,0};
+        int total = 0;
+        for(int i = 0; i < 10; i++){
+            System.out.println("adding " + total + " and " + a[i]);
+            total = total + a[i];
+            System.out.println("New total is:" + total);
+        }
+     }
+}
+
+outputs:
+adding 0 and 1
+New total is:1
+adding 1 and 2
+New total is:3
+adding 3 and 3
+New total is:6
+adding 6 and 4
+New total is:10
+adding 10 and 5
+New total is:15
+adding 15 and 4
+New total is:19
+adding 19 and 3
+New total is:22
+adding 22 and 2
+New total is:24
+adding 24 and 1
+New total is:25
+adding 25 and 0
+New total is:25
+
+
+
+b)
+public class HelloWorld{
+
+     public static void main(String []args){
+        int[] a = {1,2,3,4,5,4,3,2,1,0};
+        int total = 0;
+        for(int i = 0; i < 10; i= i + 2){
+            System.out.println("adding " + total + " and " + a[i]);
+            total = total + a[i];
+            System.out.println("New total is:" + total);
+        }
+     }
+}
+
+outputs:
+
+adding 0 and 1
+New total is:1
+adding 1 and 3
+New total is:4
+adding 4 and 5
+New total is:9
+adding 9 and 3
+New total is:12
+adding 12 and 1
+New total is:13
+
+c) 
+public class HelloWorld{
+
+     public static void main(String []args){
+        int[] a = {1,2,3,4,5,4,3,2,1,0};
+        int total = 0;
+        for(int i = 1; i < 10; i= i + 2){
+            System.out.println("adding " + total + " and " + a[i]);
+            total = total + a[i];
+            System.out.println("New total is:" + total);
+        }
+     }
+}
+
+
+adding 0 and 2
+New total is:2
+adding 2 and 4
+New total is:6
+adding 6 and 4
+New total is:10
+adding 10 and 2
+New total is:12
+adding 12 and 0
+New total is:12
+
+d)
+
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        int[] a = {1,2,3,4,5,4,3,2,1,0};
+        int total = 0;
+        for(int i = 2; i <= 10; i++){
+            System.out.println("adding " + total + " and " + a[i]);
+            total = total + a[i];
+            System.out.println("New total is:" + total);
+        }
+     }
+}
+
+outputs:
+adding 0 and 3
+New total is:3
+adding 3 and 4
+New total is:7
+adding 7 and 5
+New total is:12
+adding 12 and 4
+New total is:16
+adding 16 and 3
+New total is:19
+adding 19 and 2
+New total is:21
+adding 21 and 1
+New total is:22
+adding 22 and 0
+New total is:22
+
+e)
+
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        int[] a = {1,2,3,4,5,4,3,2,1,0};
+        int total = 0;
+        for(int i = 1; i < 10; i = 2 * i){
+            System.out.println("adding " + total + " and " + a[i]);
+            total = total + a[i];
+            System.out.println("New total is:" + total);
+        }
+     }
+}
+
+outputs:
+adding 0 and 2
+New total is:2
+adding 2 and 3
+New total is:5
+adding 5 and 5
+New total is:10
+adding 10 and 1
+New total is:11
+
+
+f)
+public class HelloWorld{
+
+     public static void main(String []args){
+        int[] a = {1,2,3,4,5,4,3,2,1,0};
+        int total = 0;
+        for(int i = 9; i >= 0; i--){
+            System.out.println("adding " + total + " and " + a[i]);
+            total = total + a[i];
+            System.out.println("New total is:" + total);
+        }
+     }
+}
+
+outputs:
+adding 0 and 0
+New total is:0
+adding 0 and 1
+New total is:1
+adding 1 and 2
+New total is:3
+adding 3 and 3
+New total is:6
+adding 6 and 4
+New total is:10
+adding 10 and 5
+New total is:15
+adding 15 and 4
+New total is:19
+adding 19 and 3
+New total is:22
+adding 22 and 2
+New total is:24
+adding 24 and 1
+New total is:25
+
+g)
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        int[] a = {1,2,3,4,5,4,3,2,1,0};
+        int total = 0;
+        for(int i = 9; i >= 0; i = i - 2){
+            System.out.println("adding " + total + " and " + a[i]);
+            total = total + a[i];
+            System.out.println("New total is:" + total);
+        }
+     }
+}
+
+outputs:
+adding 0 and 0
+New total is:0
+adding 0 and 2
+New total is:2
+adding 2 and 4
+New total is:6
+adding 6 and 4
+New total is:10
+adding 10 and 2
+New total is:12
+
+h)
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        int[] a = {1,2,3,4,5,4,3,2,1,0};
+        int total = 0;
+        for(int i = 0; i < 10; i++){
+            System.out.println("subtracting " + total + " and " + a[i]);
+            total = total - a[i];
+            System.out.println("New total is:" + total);
+        }
+     }
+}
+
+outputs:
+subtracting 0 and 1
+New total is:-1
+subtracting -1 and 2
+New total is:-3
+subtracting -3 and 3
+New total is:-6
+subtracting -6 and 4
+New total is:-10
+subtracting -10 and 5
+New total is:-15
+subtracting -15 and 4
+New total is:-19
+subtracting -19 and 3
+New total is:-22
+subtracting -22 and 2
+New total is:-24
+subtracting -24 and 1
+New total is:-25
+subtracting -25 and 0
+New total is:-25
